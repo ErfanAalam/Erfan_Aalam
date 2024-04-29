@@ -1,0 +1,29 @@
+#skill{
+    margin: 0 80px;
+}
+
+.edu{
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    background: #284381;
+    width:15%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+
+.attribute h3{
+    font-size: 2.2rem;
+}
+.attribute h5{
+    font-size: 1.2rem;
+}
+
+.timeline{
+    margin-bottom: 40px;
+}
+
+.uppertime{
+    display: inline;
+}

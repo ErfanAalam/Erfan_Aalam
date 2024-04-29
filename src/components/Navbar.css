@@ -1,0 +1,33 @@
+nav{
+    background:linear-gradient(to left,rgba(26, 26, 26, 0.688),rgba(38, 38, 59, 0.546));
+    backdrop-filter:blur(40px);
+    padding: 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.list{
+    display: flex;
+    gap: 20px;
+    font-size: 23px;
+    padding-top: 10px;
+    font-style: italic;
+}
+.logo{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.list li{
+    list-style: none;
+    transition: all 1s ;
+}
+.list li:hover{
+    border-bottom: 3px solid rgb(30, 140, 199);
+}
+a{
+    text-decoration: none;
+    color: white;
+}

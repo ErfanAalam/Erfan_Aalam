@@ -1,0 +1,107 @@
+section{
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 100px; 
+    margin: 0 80px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.detail{
+    margin-bottom: 10px;
+    font-size: 35px;
+    width: 10%;
+    overflow: hidden;
+    animation:  text 4s steps(15) infinite alternate;
+    text-wrap: nowrap;
+    background:linear-gradient(to right,rgb(240, 237, 237),rgb(30, 140, 199)) ;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.name{
+    margin-bottom: 10px;
+    font-size: 4rem;
+    background:linear-gradient(to right,rgb(252, 252, 252),rgb(30, 140, 199)) ;
+    background-clip: content-box;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.icons{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.icon{
+  border: 1px solid rgb(30, 140, 199);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.icon:hover{
+  background: rgb(30, 140, 199);
+  scale: 1.3;
+}
+
+.image{
+    clip-path: circle(50% at 50% 50%);
+    background-image: url(/src/assets/me.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 600px;
+}
+
+
+
+@keyframes text{
+    0%{
+      width: 0ch;
+    }
+    50%{
+      width: 24ch;
+    }
+    100%{
+      width: 0ch;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Change layout to column */
+        align-items: center;
+        padding: 30px 20px; /* Adjusted padding */
+    }
+
+    .image {
+        height: 400px; /* Adjusted height */
+        width: 400px; /* Adjusted width */
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    section {
+        flex-direction: column; /* Change layout to column */
+        align-items: center;
+        padding: 20px 10px; /* Adjusted padding */
+    }
+
+    .image {
+        height: 300px; /* Adjusted height */
+        width: 300px; /* Adjusted width */
+        margin-bottom: 20px; /* Add margin at the bottom */
+    }
+
+    .detail,
+    .name {
+        font-size: 1.5rem; /* Further reduced font size */
+    }
+}

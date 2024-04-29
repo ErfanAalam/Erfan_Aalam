@@ -1,0 +1,54 @@
+.section-2 {
+  padding: 80px 100px;
+  justify-content: space-between;
+  display: flex;
+  margin: 0 8 0px;
+}
+
+.right {
+  width: 50vw;
+}
+.left {
+  clip-path: circle(65% at 50% 50%);
+  background-image: url(/src/assets/erfanaalam.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+  margin-top: 60px;
+}
+
+.about {
+  font-size: 4rem;
+  text-align: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgb(30, 140, 199);
+}
+
+.summary {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 160px;
+  height: 70px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-right: 20px;
+  background: rgb(31, 36, 39);
+  cursor: pointer;
+  transition: all 1s;
+  transition: ease-out 0.4s;
+}
+
+.btn:hover {
+  box-shadow: inset 300px 0 0 0 rgb(30, 140, 199);
+}
+
+span {
+  font-weight: bold;
+  color: rgb(30, 140, 199);
+}

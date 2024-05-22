@@ -5,9 +5,9 @@ import {motion} from 'framer-motion'
 
 const Project = () => {
 
-    let spotify_url="/src/assets/spotify.webp"
-    let pokemon_url = "/src/assets/pokemon.png"
-    let moviefinder_url = "/src/assets/moviefinderlogo.jpg"
+    let spotify_url="src/assets/spotify.webp"
+    let pokemon_url = "src/assets/pokemon.png"
+    let moviefinder_url = "src/assets/moviefinderlogo.jpg"
 
   return (
     <div id='projects'>
@@ -18,7 +18,7 @@ const Project = () => {
 
     <motion.div
     initial={{opacity:0}}
-    whileInView={{opacity:1}}
+    whileInView={{opacity:2}}
     transition={{duration:1}}
     >
     <Card url={spotify_url} title="Spotify-Clone App" desc="This is a clone of a spotify website it coontains songs of local storage and we can play and pause the song. we can also control the timing of the song and can go to the next and the prev song it also contains multiple albums that have diffrent songs. this is created using HTML, CSS and Javascript" code="https://github.com/ErfanAalam/Spotify-clone" />

@@ -1,7 +1,8 @@
 .section-2 {
   padding: 80px 100px;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 20px;
 }
 

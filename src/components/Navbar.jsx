@@ -25,13 +25,13 @@ const Navbar = () => {
           <a href="#projects"><li>Projects</li></a>
           <a href="#footer"><li>Contact</li></a>
         </div>
-        {open ? " " : <button className="btn" onClick={handleOpen} >   <MenuIcon /> </button>}
+        {open ? " " : <button className="navbtn" onClick={handleOpen} >   <MenuIcon /> </button>}
 
         {
           open
             ?
             <div className="openlist">
-              <button className="btn" onClick={handleOpen} >   <CloseIcon /> </button>
+              <button className="navbtn" onClick={handleOpen} >   <CloseIcon /> </button>
               <a href=""> <li>Home</li></a>
               <a href="#about"><li>About</li></a>
               <a href="#skill"><li>Skills</li></a>

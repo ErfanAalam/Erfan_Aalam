@@ -57,8 +57,9 @@ a {
     color: white;
 }
 
-.btn{
+.navbtn{
     position: absolute;
+    background-color: rgb(134, 134, 205);
     top: 10px;
     right: 10px;
     display: none;
@@ -74,7 +75,7 @@ a {
         display: none;
     }
 
-    .btn{
+    .navbtn{
         position: absolute;
         top: 30px;
         display: inline-block;

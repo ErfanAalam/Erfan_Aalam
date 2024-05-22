@@ -27,3 +27,37 @@
 .uppertime{
     display: inline;
 }
+
+@media (max-width: 768px) {
+
+    #skill{
+        margin: 0 0;
+    }
+    
+    .edu{
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        background: #284381;
+        width:100%;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    
+    
+    .attribute h3{
+        font-size: 1.4rem;
+    }
+    .attribute h5{
+        font-size: 1rem;
+    }
+    
+    .timeline{
+        margin-bottom: 40px;
+    }
+    
+    .uppertime{
+        display: inline;
+    }
+
+}

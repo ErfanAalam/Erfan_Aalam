@@ -142,9 +142,28 @@
       flex-direction: column;
       align-items: center;
       margin: 4rem 2vw;
-      width: 200vw;
       padding: 0 30px;
     }
+
+    .card {
+      position: relative;
+      display: block;
+      height: 200px;  
+      border-radius: calc(var(--curve) * 1px);
+      overflow: hidden;
+      text-decoration: none;
+    }
+    
+    .card__image {     
+      width:100%;
+      height: auto;
+    }
+    
+    .project{
+      font-size: 3.5rem;
+    }
+  
+   
   }
 
 

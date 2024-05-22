@@ -24,7 +24,7 @@ nav {
 
 .openlist{
     display: flex;
-    width: 50%;
+    width: 55%;
     align-items: flex-start;
     margin-top: 100px;
     flex-direction: column;
@@ -67,7 +67,7 @@ a {
 
 @media screen and (max-width: 768px) {
     nav{
-        padding: 15px 20px;
+        padding: 35px 20px;
     }
 
     .list{
@@ -75,9 +75,17 @@ a {
     }
 
     .btn{
+        position: absolute;
+        top: 30px;
         display: inline-block;
+        width: 72px;
+        height: 41px;
     }
 
+    .logo {
+        font-size: 16px;
+        font-style: italic;
+    }
 
 
 }

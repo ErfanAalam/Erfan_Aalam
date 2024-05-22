@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <motion.div className="section-2" id="about"
-      initial={{opacity:0,x:-1000}}
+      initial={{opacity:0,x:-200}}
       whileInView={{opacity:1,x:0}}
       transition={{duration:1}}
       >
@@ -25,24 +25,14 @@ const About = () => {
             <span>HTML, CSS, and JavaScript. </span>
             <br />
             <br />
-            As I delved deeper into the world of web development, I expanded my
-            toolkit to include cutting-edge technologies such as{" "}
-            <span>React, Node.js, Tailwind CSS, and TypeScript.</span> This
-            journey has been incredibly rewarding, allowing me to blend
-            creativity with technical proficiency to bring ideas to life on the
-            web. <br />
+           
             <br />
             With a stellar <span> 9 CGPA</span> in my first year, I've
             demonstrated a strong dedication to academic excellence and a thirst
             for knowledge. But beyond the classroom, my true passion lies in
             building intuitive and seamless user experiences that leave a
             lasting impression. <br /> <br />
-            Whether it's crafting pixel-perfect designs or diving into the
-            intricacies of <span>backend development</span>, I thrive on pushing
-            the boundaries of what's possible in the digital landscape. Join me
-            on my journey as I continue to evolve and innovate in the
-            ever-expanding world of web development. Let's create something
-            extraordinary together.
+           
           </p>
 
             <button className="btn">

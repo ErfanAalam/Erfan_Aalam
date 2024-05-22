@@ -2,7 +2,7 @@
   padding: 80px 100px;
   justify-content: space-between;
   display: flex;
-  margin: 0 8 0px;
+  margin: 0 20px;
 }
 
 .right {
@@ -13,8 +13,8 @@
   background-image: url(/src/assets/erfanaalam.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   margin-top: 60px;
 }
 
@@ -57,12 +57,62 @@ span {
 @media screen and (max-width: 768px) {
   .section-2 {
     flex-direction: column;
+    padding: 0 50px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0;
   }
 
   .right {
-    width: 180vw;
+    width: 70vw;
     margin-top: 40px;
   }
+
+  .left {
+    clip-path: circle(65% at 50% 50%);
+    background-image: url(/src/assets/erfanaalam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    margin-top: 60px;
+  }
+  
+  .about {
+    font-size: 2rem;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(30, 140, 199);
+  }
+  
+  .summary {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-right: 20px;
+    background: rgb(31, 36, 39);
+    cursor: pointer;
+    transition: all 1s;
+    transition: ease-out 0.4s;
+  }
+  
+  .btn:hover {
+    box-shadow: inset 300px 0 0 0 rgb(30, 140, 199);
+  }
+  
+  span {
+    font-weight: bold;
+    color: rgb(30, 140, 199);
+  }
+  
 
 }
 

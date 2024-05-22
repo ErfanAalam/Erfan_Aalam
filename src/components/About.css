@@ -52,3 +52,17 @@ span {
   font-weight: bold;
   color: rgb(30, 140, 199);
 }
+
+
+@media screen and (max-width: 768px) {
+  .section-2 {
+    flex-direction: column;
+  }
+
+  .right {
+    width: 180vw;
+    margin-top: 40px;
+  }
+
+}
+

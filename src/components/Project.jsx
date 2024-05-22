@@ -4,9 +4,9 @@ import Card from './Card'
 
 const Project = () => {
 
-  let spotify_url = "src/assets/spotify.webp"
-  let pokemon_url = "src/assets/pokemon.png"
-  let moviefinder_url = "src/assets/moviefinderlogo.jpg"
+  let spotify_url = "/public/assets/spotify.png"
+  let pokemon_url = "/public/assets/pokemon.png"
+  let moviefinder_url = "public/assets/moviefinderlogo.jpg"
 
   return (
     <div id='projects'>

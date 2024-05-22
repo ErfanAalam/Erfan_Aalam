@@ -54,7 +54,7 @@ section {
 
 .image {
   clip-path: circle(50% at 50% 50%);
-  background-image: url(/src/assets/me.jpg);
+  background-image: url(/public/assets/me.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;

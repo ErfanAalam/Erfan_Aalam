@@ -32,15 +32,15 @@ const About = () => {
             for knowledge. But beyond the classroom, my true passion lies in
             building intuitive and seamless user experiences that leave a
             lasting impression. <br /> <br />
-           
-          </p>
 
+          </p>
             <button className="btn">
               <a href="/ErfanAalam2Resume (1).pdf">Download CV</a>
             </button>
             <button className="btn">
               <a href="/ErfanAalam2Resume (1).pdf">Contact me</a>
             </button>
+
         </div>
       </motion.div>
     </>

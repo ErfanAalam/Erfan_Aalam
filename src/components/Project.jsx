@@ -7,7 +7,7 @@ const Project = () => {
 
     let spotify_url="/src/assets/spotify.webp"
     let pokemon_url = "/src/assets/pokemon.png"
-    let ecommerce_url = "/src/assets/ecommerce.png"
+    let moviefinder_url = "/src/assets/moviefinderlogo.jpg"
 
   return (
     <div id='projects'>
@@ -39,7 +39,7 @@ const Project = () => {
     whileInView={{opacity:1,x:0}}
     transition={{duration:1}}
     >
-    <Card url={ecommerce_url} title="Shoes Ecommerce" desc="This is reacty based application containing collection of shoes of diffrent brands in this we can filters the products based on their color, brand name, size and price  it also have rating of the products it contains both mens and womens collection that are sotred locally" code="https://github.com/ErfanAalam/shoes-ecommerce" />
+    <Card url={moviefinder_url} title="Movie Finder" desc="This is reacty based application in which you can find movies and can watch their trailer. In this applicatio all the movies and their trailer is fethed from the API. in this movies has also their poseter as cover image" code="https://github.com/ErfanAalam/Find-Movies" />
     </motion.div>
   
 </ul>

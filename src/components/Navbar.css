@@ -1,6 +1,6 @@
-nav{
-    background:linear-gradient(to left,rgba(26, 26, 26, 0.688),rgba(38, 38, 59, 0.546));
-    backdrop-filter:blur(40px);
+nav {
+    background: linear-gradient(to left, rgba(26, 26, 26, 0.688), rgba(38, 38, 59, 0.546));
+    backdrop-filter: blur(40px);
     padding: 15px 100px;
     display: flex;
     justify-content: space-between;
@@ -8,26 +8,77 @@ nav{
     width: 100%;
     z-index: 100;
 }
-.list{
+
+.logo {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.list {
     display: flex;
     gap: 20px;
     font-size: 23px;
     padding-top: 10px;
     font-style: italic;
 }
-.logo{
-    font-size: 25px;
+
+.openlist{
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 23px;
+    padding-top: 10px;
     font-style: italic;
 }
 
-.list li{
+.openlist li {
     list-style: none;
-    transition: all 1s ;
+    transition: all 1s;
 }
-.list li:hover{
+
+.openlist li:hover {
     border-bottom: 3px solid rgb(30, 140, 199);
 }
-a{
+
+.list li {
+    list-style: none;
+    transition: all 1s;
+}
+
+.list li:hover {
+    border-bottom: 3px solid rgb(30, 140, 199);
+}
+
+a {
     text-decoration: none;
     color: white;
 }
+
+.btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 15px 20px;
+    }
+
+    .list{
+        display: none;
+    }
+
+    .btn{
+        display: inline-block;
+    }
+
+
+
+}
+

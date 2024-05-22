@@ -70,10 +70,6 @@ span {
   }
 
   .left {
-    clip-path: circle(65% at 50% 50%);
-    background-image: url(/src/assets/erfanaalam.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 250px;
     width: 250px;
     margin-top: 60px;

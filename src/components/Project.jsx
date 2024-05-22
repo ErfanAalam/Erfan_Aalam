@@ -4,9 +4,9 @@ import Card from './Card'
 
 const Project = () => {
 
-  let spotify_url = "public/assets/spotify.png"
-  let pokemon_url = "public/assets/pokemon.png"
-  let moviefinder_url = "public/assets/moviefinderlogo.jpg"
+  let spotify_url = "assets/spotify.png"
+  let pokemon_url = "assets/pokemon.png"
+  let moviefinder_url = "assets/moviefinderlogo.jpg"
 
   return (
     <div id='projects'>

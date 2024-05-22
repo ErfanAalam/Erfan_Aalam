@@ -12,7 +12,7 @@ html{
 
 body{
   color: white; 
-   background: url(public/assets/bg.jpg);
+   background: url(assets/bg.jpg);
    /* background: rgb(59, 69, 80); */
    /* background: url(/src/assets/bg.png); */
    /* background: url(/src/assets/face1.avif); */

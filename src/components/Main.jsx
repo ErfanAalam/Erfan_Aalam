@@ -59,7 +59,6 @@ const Main = () => {
         <motion.div className="image"
         animate={{x:0 }}
         initial={{x:1000 }}
-        whileHover={{scale:1.2}}
         transition={{duration:0.6}}
         ></motion.div>
       </section>

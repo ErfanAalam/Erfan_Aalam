@@ -1,8 +1,8 @@
 section {
   display: flex;
   justify-content: space-between;
-  padding: 200px 100px;
-  margin: 0 80px;
+  padding: 150px 60px;
+  margin: 0 40px;
 }
 
 .details {
@@ -77,18 +77,18 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px){
 
   section {
     flex-direction: column-reverse;
     gap: 60px;
     align-items: center;
-    padding: 145px 100px 80px 100px;
-    margin-left: 50px;
+    padding: 145px 0 80px 10px;
+    margin-left: 0;
   }
 
   .details{
-    margin-left: 40px;
+    margin-left: 0;
   }
 
   .name {
@@ -122,3 +122,28 @@ section {
   }
 }
 
+
+@media (max-width: 1200px) {
+
+  .details {
+    width: 300px;
+    padding-bottom: 50px;
+  }
+  
+  .detail {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  
+  .name {
+    font-size: 3rem;
+  }
+  
+  .image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+  }
+
+}

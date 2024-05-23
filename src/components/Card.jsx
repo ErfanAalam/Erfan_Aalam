@@ -1,6 +1,5 @@
 import React from 'react'
 import './Project.css'
-import {motion} from 'framer-motion'
 
 const Card = ({url,title,desc,code}) => {
   return (

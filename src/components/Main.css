@@ -83,12 +83,12 @@ section {
     flex-direction: column-reverse;
     gap: 60px;
     align-items: center;
-    padding: 145px 0 80px 10px;
+    padding: 145px 0 80px 0;
     margin-left: 0;
   }
 
   .details{
-    margin-left: 0;
+    margin-left: 10px;
   }
 
   .name {
@@ -117,7 +117,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 250px;
+    width: 200px;
     padding-bottom: 50px;
   }
 }
@@ -132,7 +132,7 @@ section {
   
   .detail {
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 23px;
   }
   
   .name {

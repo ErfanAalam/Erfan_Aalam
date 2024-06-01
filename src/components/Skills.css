@@ -7,7 +7,7 @@
     padding: 10px;
     margin: auto;
     background: #284381;
-    width:15%;
+    width:fit-content;
     border-radius: 20px;
     margin-bottom: 30px;
 }
@@ -39,7 +39,7 @@
         padding: 10px;
         margin: auto;
         background: #284381;
-        width:90%;
+        width:fit-content;
         border-radius: 20px;
         margin-bottom: 30px;
     }

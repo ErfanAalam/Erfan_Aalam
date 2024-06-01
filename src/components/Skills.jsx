@@ -10,22 +10,9 @@ const Skills = () => {
     <div
       id="skill"
     >
-      <h2 className="edu">Education</h2>
 
       <Timeline position="alternate">
 
-        <Uppertime
-          one="Graduation Degree"
-          two="Bachelor's of computer application"
-          three="Poornima University 2022-2025"
-        />
-
-        {/* <div > */}
-        <Lowertime
-          one="High School"
-          two="Science Stream with 85%"
-          three="Adarsh Sr. sec. school 2021-2022"
-        ></Lowertime>
 
         {/* </div> */}
 
@@ -75,6 +62,22 @@ const Skills = () => {
           one="MySql"
           two="MySQL offers a range of products and services for transactions, analytics, machine learning, and embedded databases"
         />
+
+
+        <h2 className="edu">Education</h2>
+
+        <Uppertime
+          one="Graduation Degree"
+          two="Bachelor's of computer application"
+          three="Poornima University 2022-2025"
+        />
+
+        {/* <div > */}
+        <Lowertime
+          one="High School"
+          two="Science Stream with 85%"
+          three="Adarsh Sr. sec. school 2021-2022"
+        ></Lowertime>
       </Timeline>
     </div>
   );

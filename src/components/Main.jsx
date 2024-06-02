@@ -4,37 +4,69 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import XIcon from "@mui/icons-material/X";
 import MailIcon from "@mui/icons-material/Mail";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import { useState, useEffect } from "react";
 
 
 
 const Main = () => {
+
+  const phrases = ["Web Developer", "MERN Stack  Developer", "JavaScript Developer"];
+  const [currentPhrase, setCurrentPhrase] = useState([]);
+  const [visible, setVisible] = useState(true);
+  const [index, setIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [isBuilding, setIsBuilding] = useState(true);
+
+  useEffect(() => {
+    const words = phrases[index].split(" ").map(word => word.split(""));
+
+    const interval = setInterval(() => {
+      if (isBuilding) {
+        if (charIndex < words.flat().length) {
+          setCurrentPhrase((prev) => [...prev, words.flat()[charIndex]]);
+          setCharIndex(charIndex + 1);
+        } else {
+          setIsBuilding(false);
+          setTimeout(() => setVisible(false), 10000000); // wait a bit before disappearing
+        }
+      } else {
+        if (currentPhrase.length > 0) {
+          setCurrentPhrase((prev) => prev.slice(0, -1));
+        } else {
+          setVisible(true);
+          setIsBuilding(true);
+          setCharIndex(0);
+          setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+        }
+      }
+    }, 100); // Adjust the interval time for displaying each character
+
+    return () => clearInterval(interval);
+  }, [currentPhrase, index, isBuilding, charIndex]);
+
   return (
     <>
       <section>
         <motion.div className="details"
-        animate={{x:0 }}
-        initial={{x:-1000 }}
-        transition={{duration:0.6}}
+          animate={{ x: 0 }}
+          initial={{ x: -1000 }}
+          transition={{ duration: 0.6 }}
         >
 
           <div className="name">
             Hello ......
           </div>
           <div className="name">
-           I am Erfan Aalam
+            I am Erfan Aalam
 
           </div>
 
-          <div className="detail">
-            Web Developer
-          </div>
-          <div className="detail">
-            MERN Stack Developer
-          </div>
-          <div className="detail">
-            JavaScript developer
-          </div>
+          {/* <div className="details"> */}
+            <div className="detail" style={{ visibility: visible ? 'visible' : 'hidden' }}>
+            {currentPhrase.join("")}
+            </div>
+          {/* </div> */}
 
           <div className="icons">
             <div className="icon">
@@ -64,9 +96,9 @@ const Main = () => {
         </motion.div>
 
         <motion.div className="image"
-        animate={{x:0 }}
-        initial={{x:1000 }}
-        transition={{duration:0.6}}
+          animate={{ x: 0 }}
+          initial={{ x: 1000 }}
+          transition={{ duration: 0.6 }}
         ></motion.div>
       </section>
     </>

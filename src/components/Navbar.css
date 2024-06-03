@@ -14,6 +14,11 @@ nav {
     font-style: italic;
 }
 
+.openlist, .menuicon{
+    display: none;
+}
+
+
 .list {
     display: flex;
     gap: 20px;
@@ -22,26 +27,7 @@ nav {
     font-style: italic;
 }
 
-.openlist{
-    display: flex;
-    width: 50%;
-    align-items: flex-start;
-    margin-top: 100px;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 23px;
-    padding-top: 10px;
-    font-style: italic;
-}
 
-.openlist li {
-    list-style: none;
-    transition: all 1s;
-}
-
-.openlist li:hover {
-    border-bottom: 3px solid rgb(30, 140, 199);
-}
 
 .list li {
     list-style: none;
@@ -69,10 +55,39 @@ a {
 @media screen and (max-width: 768px) {
     nav{
         padding: 35px 20px;
+        /* position: relative; */
     }
 
     .list{
         display: none;
+    }
+
+    .openlist{
+        background: linear-gradient(to left, rgb(0, 0, 0), rgb(0, 0, 0));
+        backdrop-filter: blur(100px);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        padding: 40px;
+        height: 100vh;
+        width: 100%;
+        gap: 30px;
+        transition: all 0.6s ease-out;
+    }
+
+    .menuicon{
+        display: block;
+    }
+    
+    
+    .openlist li{
+        list-style: none;
+    }
+    .openlist a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .navbtn{

@@ -40,7 +40,7 @@ const Main = () => {
           setIndex((prevIndex) => (prevIndex + 1) % phrases.length);
         }
       }
-    }, 100); // Adjust the interval time for displaying each character
+    }, 100);
 
     return () => clearInterval(interval);
   }, [currentPhrase, index, isBuilding, charIndex]);
@@ -62,11 +62,9 @@ const Main = () => {
 
           </div>
 
-          {/* <div className="details"> */}
-            <div className="detail" style={{ visibility: visible ? 'visible' : 'hidden' }}>
+          <div className="detail" style={{ visibility: visible ? 'visible' : 'hidden' }}>
             {currentPhrase.join("")}
-            </div>
-          {/* </div> */}
+          </div>
 
           <div className="icons">
             <div className="icon">
@@ -95,7 +93,7 @@ const Main = () => {
           </div>
         </motion.div>
 
-        <motion.div className="image"
+       <motion.div className="image"
           animate={{ x: 0 }}
           initial={{ x: 1000 }}
           transition={{ duration: 0.6 }}

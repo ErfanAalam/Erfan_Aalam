@@ -12,6 +12,8 @@ const About = () => {
       >
         <div className="left"></div>
 
+
+
         <div className="right">
           <div className="about">
             <h3><span>About</span> Me</h3>

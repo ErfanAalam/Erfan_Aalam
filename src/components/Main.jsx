@@ -28,7 +28,7 @@ const Main = () => {
           setCharIndex(charIndex + 1);
         } else {
           setIsBuilding(false);
-          setTimeout(() => setVisible(false), 10000000); // wait a bit before disappearing
+          setTimeout(() => setVisible(false), 10000000); 
         }
       } else {
         if (currentPhrase.length > 0) {

@@ -1,174 +1,176 @@
 :root {
-    --surface-color:#4c81d1;
-    --curve: 10;
-  }
+  --surface-color: #0e1012;
+  --curve: 10;
+}
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 300px;
+  width: 400px;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  /* border: 3px solid; */
+  box-shadow: 3px 3px 20px rgb(243, 238, 238);
+  /* text-decoration: none; */
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: #0e1012;
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1.4em;
+  margin: 0 0 .3em;
+  color: #253994;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  overflow-y: scroll;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  /* overflow: hidden; */
+}
+
+.card__description::-webkit-scrollbar {
+  display: none;
+}
+
+.project {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 4rem;
+  background: linear-gradient(to right, rgb(252, 252, 252), rgb(6, 143, 216));
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pro-btn {
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.pro-btn:hover {
+  background: rgb(4, 79, 119);
+  color: white;
+}
+
+
+@media (max-width: 768px) {
   .cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 4rem 5vw;
-    padding: 0;
-    list-style-type: none;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 2vw;
+    padding: 0 30px;
   }
-  
+
   .card {
     position: relative;
     display: block;
-    height: 200px;  
+    height: 200px;
     width: 300px;
     border-radius: calc(var(--curve) * 1px);
     overflow: hidden;
     text-decoration: none;
   }
-  
-  .card__image {     
-    width:100%;
+
+  .card__image {
+    width: 100%;
     height: auto;
   }
-  
-  .card__overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;      
-    border-radius: calc(var(--curve) * 1px);    
-    background-color: #4c81d1;      
-    transform: translateY(100%);
-    transition: .2s ease-in-out;
-  }
-  
-  .card:hover .card__overlay {
-    transform: translateY(0);
-  }
-  
-  .card__header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    padding: 2em;
-    border-radius: calc(var(--curve) * 1px) 0 0 0;    
-    background-color: var(--surface-color);
-    transform: translateY(-100%);
-    transition: .2s ease-in-out;
-  }
-  
-  .card__arc {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    bottom: 100%;
-    right: 0;      
-    z-index: 1;
-  }
-  
-  .card__arc path {
-    fill: var(--surface-color);
-    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-  }       
-  
-  .card:hover .card__header {
-    transform: translateY(0);
-  }
-  
-  .card__thumb {
-    flex-shrink: 0;
-    width: 50px;
-    height: 50px;      
-    border-radius: 50%;      
-  }
-  
-  .card__title {
-    font-size: 1em;
-    margin: 0 0 .3em;
-    color: #253994;
-  }
-  
-  .card__tagline {
-    display: block;
-    margin: 1em 0;
-    font-family: "MockFlowFont";  
-    font-size: .8em; 
-    color: #D7BDCA;  
-  }
-  
-  .card__status {
-    font-size: .8em;
-    color: #D7BDCA;
-  }
-  
-  .card__description {
-    padding: 0 2em 2em;
-    margin: 0;
-    color: #D7BDCA;
-    overflow-y: scroll;  
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    /* overflow: hidden; */
-  }   
-  
-  .card__description::-webkit-scrollbar{
-    display: none;
-  }
-  .project{
-    text-align: center;
-    margin-top: 40px;
-    font-size: 4rem;
-    background:linear-gradient(to right,rgb(252, 252, 252),rgb(6, 143, 216)) ;
-    background-clip: content-box;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent; 
-  }
 
-  .pro-btn{
-    padding: 10px;
-    margin-left: 30px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-  }
-
-  .pro-btn:hover{
-    background: rgb(4, 79, 119);
-    color: white;
+  .project {
+    font-size: 3.5rem;
   }
 
 
-  @media (max-width: 768px) {
-    .cards {
-      display: flex;
-      gap: 40px;
-      flex-direction: column;
-      align-items: center;
-      margin: 4rem 2vw;
-      padding: 0 30px;
-    }
-
-    .card {
-      position: relative;
-      display: block;
-      height: 200px;  
-      border-radius: calc(var(--curve) * 1px);
-      overflow: hidden;
-      text-decoration: none;
-    }
-    
-    .card__image {     
-      width:100%;
-      height: auto;
-    }
-    
-    .project{
-      font-size: 3.5rem;
-    }
-  
-   
-  }
-
-
+}

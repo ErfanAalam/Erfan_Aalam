@@ -58,7 +58,7 @@ const Main = () => {
             Hello ......
           </div>
           <div className="name">
-            I am Erfan Aalam
+            I'm Erfan Aalam
 
           </div>
 

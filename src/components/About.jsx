@@ -38,10 +38,10 @@ const About = () => {
           </p>
           <div className="btns">
             <button className="btn">
-              <a href="/ErfanAalam2Resume (1).pdf">Download CV</a>
+              <a href="/ErfanAalamResume.pdf">Download CV</a>
             </button>
             <button className="btn">
-              <a href="/ErfanAalam2Resume (1).pdf">Contact me</a>
+              <a href="/ErfanAalamResume.pdf">Contact me</a>
             </button>
 
           </div>

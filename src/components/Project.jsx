@@ -7,6 +7,7 @@ const Project = () => {
   let spotify_url = "assets/spotify.png"
   let pokemon_url = "assets/pokemon.png"
   let moviefinder_url = "assets/moviefinderlogo.jpg"
+  let chatroom_url = "assets/chatroom.jpeg"
 
   return (
     <div id='projects'>
@@ -24,7 +25,11 @@ const Project = () => {
         </div>
 
         <div>
-          <Card url={moviefinder_url} title="Movie Finder" desc="This is reacty based application in which you can find movies and can watch their trailer. In this applicatio all the movies and their trailer is fethed from the API. in this movies has also their poseter as cover image" code="https://github.com/ErfanAalam/Find-Movies" />
+          <Card url={moviefinder_url} title="Movie Finder" desc="This is react based application in which you can find movies and can watch their trailer. In this applicatio all the movies and their trailer is fethed from the API. in this movies has also their poseter as cover image" code="https://github.com/ErfanAalam/Find-Movies" />
+        </div>
+
+        <div>
+          <Card url={chatroom_url} title="Chat Room" desc="This is react and express based application in which you can join room and chat with the friends in a same group yet not completed for specific person only based on a group chat. emplemented by scoket and express" code="https://github.com/ErfanAalam/ChatRoom-frontend" />
         </div>
 
       </ul>

@@ -28,6 +28,15 @@
     display: inline;
 }
 
+@media screen and (max-width:1200px) {
+    .attribute h3{
+        font-size: 1.8rem;
+    }
+    .attribute h5{
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
 
     #skill{
@@ -46,10 +55,10 @@
     
     
     .attribute h3{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .attribute h5{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .timeline{

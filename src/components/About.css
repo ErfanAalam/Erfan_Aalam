@@ -1,13 +1,13 @@
 .section-2 {
-  padding: 60px 40px;
+  padding: 40px 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px 200px 20px;
+  margin: 0 20px 100px 20px;
 }
 
 .right {
-  width: 50vw;
+  width: 55vw;
 }
 
 .left {
@@ -56,71 +56,12 @@ span {
 }
 
 
-@media screen and (max-width: 780px) {
-  .section-2 {
-    flex-direction: column;
-    padding: 0 20px;
-    justify-content: space-between;
-    display: flex;
-    margin: 50px 0;
-  }
-
-  .right {
-    width: 90vw;
-    margin-top: 40px;
-  }
-
-  .left {
-    height: 350px;
-    width: 350px;
-    margin-top: 60px;
-    margin-left: 10px;
-    margin-bottom: 0;
-  }
-
-  .about {
-    font-size: 2rem;
-    text-align: center;
-    gap: 40px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid rgb(30, 140, 199);
-  }
-
-  .summary {
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 30px;
-  }
-
-  .btn {
-    width: 130px;
-    height: 70px;
-    border-radius: 10px;
-    font-size: 18px;
-    background: rgb(31, 36, 39);
-    cursor: pointer;
-    transition: all 1s;
-    transition: ease-out 0.4s;
-  }
-
-  .btn:hover {
-    box-shadow: inset 300px 0 0 0 rgb(30, 140, 199);
-  }
-
-  span {
-    font-weight: bold;
-    color: rgb(30, 140, 199);
-  }
-
-
-}
-
 
 @media (max-width: 1200px) {
 
   .section-2 {
-    padding: 60px 20px;
-    margin: 0 20px 150px 20px;
+    padding:40px 60px;
+    margin: 0 0 100px 0;
     display: flex;
     gap: 40px;
   }
@@ -159,5 +100,72 @@ span {
     font-weight: bold;
     color: rgb(30, 140, 199);
   }
+
+}
+
+
+@media screen and (max-width: 780px) {
+  .section-2 {
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 0 50px 0;
+  }
+
+  .right {
+    width: 90vw;
+    margin-top: 10px;
+  }
+
+  .left {
+    height: 300px;
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
+  .about {
+    font-size: 2rem;
+    text-align: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(30, 140, 199);
+  }
+
+  .summary {
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    width: 120px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    background: rgb(31, 36, 39);
+    cursor: pointer;
+    transition: all 1s;
+    transition: ease-out 0.4s;
+  }
+
+  .btns{
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn:hover {
+    box-shadow: inset 300px 0 0 0 rgb(30, 140, 199);
+  }
+
+  span {
+    font-weight: bold;
+    color: rgb(30, 140, 199);
+  }
+
 
 }

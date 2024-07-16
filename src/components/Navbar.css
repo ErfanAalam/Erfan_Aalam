@@ -10,7 +10,7 @@ nav {
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 1.6rem;
     font-style: italic;
 }
 
@@ -106,3 +106,9 @@ a {
 
 }
 
+
+@media screen and (max-width: 1200px) {
+    .logo{
+        font-size: 1.3rem;
+    }
+}

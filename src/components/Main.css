@@ -1,16 +1,14 @@
 section {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  padding: 150px 60px;
-  /* margin: 0 40px; */
+  padding: 160px 150px 160px 150px;
 }
 
 .details {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 520px;
+  /* width: 520px; */
   padding-bottom: 50px;
 }
 
@@ -66,77 +64,13 @@ section {
 }
 
 
-/* 
-@keyframes text {
-  0% {
-    width: 0ch;
-  }
 
-  50% {
-    width: 24ch;
-  }
-
-  100% {
-    width: 0ch;
-  }
-} */
-
-@media (max-width: 780px){
-
-  section {
-    flex-direction: column-reverse;
-    gap: 60px;
-    align-items: center;
-    padding: 145px 0 80px 0;
-    margin-left: 0;
-  }
+@media screen and (max-width: 1200px) {
   
-  
-
-  .name {
-    margin-bottom: 10px;
-    font-size: 3rem;
-    background: linear-gradient(to right, rgb(252, 252, 252), rgb(30, 140, 199));
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .icons{
-    display: flex;
-    justify-content: center;
-  }
-
-  .image {
-    height: 250px;
-    width: 250px;
-    margin-bottom: 20px;
-  }
-
-  .detail {
-    margin-bottom: 10px;
-    font-size: 10px;
-    /* width: 120%; */
-  }
-
-  .details {
-    display: flex;
-    text-align: center;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    /* width: 200px; */
-    padding-bottom: 50px;
-  }
-}
-
-
-@media (max-width: 1200px) {
-
   section{
-    padding: 140px 30px;
+    padding: 120px 100px 80px 100px;
   }
-
+  
   .details {
     /* width: 100%; */
     padding-bottom: 50px;
@@ -157,5 +91,47 @@ section {
     height: 300px;
     width: 300px;
   }
+  
+}
 
+@media screen and (max-width: 768px){
+
+  section {
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+    padding: 160px 0 0 0;
+    margin-left: 0;
+  }
+
+  .name{
+    font-size: 2rem;
+  }
+  
+  .icons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .image {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .detail {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    /* width: 120%; */
+  }
+
+  .details {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 200px; */
+    padding-bottom: 50px;
+  }
 }

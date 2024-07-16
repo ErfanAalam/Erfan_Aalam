@@ -1,14 +1,14 @@
 import React from "react";
 import "./About.css";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const About = () => {
   return (
     <>
       <motion.div className="section-2" id="about"
-      initial={{opacity:0,x:-200}}
-      whileInView={{opacity:1,x:0}}
-      transition={{duration:1}}
+        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
       >
         <div className="left"></div>
 
@@ -27,7 +27,7 @@ const About = () => {
             <span>HTML, CSS, and JavaScript. </span>
             <br />
             <br />
-           
+
             <br />
             With a stellar <span> 9 CGPA</span> in my first year, I've
             demonstrated a strong dedication to academic excellence and a thirst
@@ -36,6 +36,7 @@ const About = () => {
             lasting impression. <br /> <br />
 
           </p>
+          <div className="btns">
             <button className="btn">
               <a href="/ErfanAalam2Resume (1).pdf">Download CV</a>
             </button>
@@ -43,6 +44,7 @@ const About = () => {
               <a href="/ErfanAalam2Resume (1).pdf">Contact me</a>
             </button>
 
+          </div>
         </div>
       </motion.div>
     </>

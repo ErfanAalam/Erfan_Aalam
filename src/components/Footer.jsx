@@ -16,13 +16,13 @@ const Footer = () => {
     </div>
     <ul className="social-icon">
       <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/in/erfan-aalam-1957b9271">
-          <LinkedInIcon />
+          <LinkedInIcon fontSize='large' />
         </a></li>
       <li className="social-icon__item"><a className="social-icon__link" href="https://github.com/ErfanAalam">
-          <GitHubIcon />
+          <GitHubIcon fontSize='large'/>
         </a></li>
       <li className="social-icon__item"><a className="social-icon__link" href="https://x.com/ErfanAalam03?t=Rg9Pk0LDYEaar-MAFf9Mfw&s=09">
-          <XIcon/>
+          <XIcon fontSize='large'/>
         </a></li>
       
     </ul>
@@ -33,7 +33,7 @@ const Footer = () => {
       <li className="menu__item"><a className="menu__link" href="#projects">Projects</a></li>
 
     </ul>
-    <p>Erfan Aalam React Frontend Developer</p>
+    <p> <div>© Erfan Aalam</div> <div>React Frontend Developer</div></p>
   </footer>
     </div>
   )

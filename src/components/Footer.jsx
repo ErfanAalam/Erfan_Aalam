@@ -33,7 +33,7 @@ const Footer = () => {
       <li className="menu__item"><a className="menu__link" href="#projects">Projects</a></li>
 
     </ul>
-    <p> <div>© Erfan Aalam</div> <div>React Frontend Developer</div></p>
+    <p> <div>© Erfan Aalam</div> <div>MERN stack Developer</div></p>
   </footer>
     </div>
   )

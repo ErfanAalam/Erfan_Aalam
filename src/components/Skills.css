@@ -1,71 +1,93 @@
-#skill{
+#skill {
     margin: 0 80px;
 }
 
-.edu{
+.edu {
     text-align: center;
     padding: 10px;
     margin: auto;
     background: #284381;
-    width:fit-content;
+    width: fit-content;
     border-radius: 20px;
     margin-bottom: 30px;
 }
 
 
-.attribute h3{
+.attribute h3 {
     font-size: 2.2rem;
 }
-.attribute h5{
+
+.attribute h5 {
     font-size: 1.2rem;
 }
 
-.timeline{
+.timeline {
     margin-bottom: 40px;
 }
 
-.uppertime{
+.uppertime {
     display: inline;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.extradiv {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    border-radius: 50%;
+    transition: all 0.8s ease-in-out;
+}
+
+.box:hover .extradiv {
+    transform: scale(5);
+    transition: all 0.8s ease-in-out;
+}
+
 @media screen and (max-width:1200px) {
-    .attribute h3{
+    .attribute h3 {
         font-size: 1.8rem;
     }
-    .attribute h5{
+
+    .attribute h5 {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
 
-    #skill{
+    #skill {
         margin: 0 0;
     }
-    
-    .edu{
+
+    .edu {
         text-align: center;
         padding: 10px;
         margin: auto;
         background: #284381;
-        width:fit-content;
+        width: fit-content;
         border-radius: 20px;
         margin-bottom: 30px;
     }
-    
-    
-    .attribute h3{
+
+
+    .attribute h3 {
         font-size: 1.3rem;
     }
-    .attribute h5{
+
+    .attribute h5 {
         font-size: 0.8rem;
     }
-    
-    .timeline{
+
+    .timeline {
         margin-bottom: 40px;
     }
-    
-    .uppertime{
+
+    .uppertime {
         display: inline;
     }
 

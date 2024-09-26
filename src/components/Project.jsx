@@ -8,6 +8,9 @@ const Project = () => {
   let pokemon_url = "assets/pokemon.png"
   let moviefinder_url = "assets/moviefinderlogo.jpg"
   let chatroom_url = "assets/chatroom.jpeg"
+  let ecommerce_url = "assets/ecommmerce.png"
+  let weather_url = "assets/weatherapp.webp"
+  let api_url = "assets/apibackend.png"
 
   return (
     <div id='projects'>
@@ -30,6 +33,18 @@ const Project = () => {
 
         <div>
           <Card url={chatroom_url} title="Chat Room" desc="This is react and express based application in which you can join room and chat with the friends in a same group yet not completed for specific person only based on a group chat. emplemented by scoket and express" code="https://github.com/ErfanAalam/ChatRoom-frontend" />
+        </div>
+
+        <div>
+          <Card url={ecommerce_url} title="Ecommerce website" desc="This is MERN based application based on ecommerce application in which we can add items to our cart, can create our account and add address for shipping, after confirm order mail will come in our given gmail id." code="https://github.com/ErfanAalam/Ecommerce-frontend" />
+        </div>
+
+        <div>
+          <Card url={weather_url} title="Weather app" desc="This is Flask based project which is fraework of pyton in tis we can see the weather information of any city in this i use the weatherapp API" code="https://github.com/ErfanAalam/weatherappUsingFlask" />
+        </div>
+
+        <div>
+          <Card url={api_url} title="Products API" desc="This is Express js based project in this i create some REST api of products hich can be use in another project as a API" code="https://github.com/ErfanAalam/ProductStoreAPI-backend" />
         </div>
 
       </ul>

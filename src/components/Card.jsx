@@ -5,7 +5,7 @@ const Card = ({ url, title, desc, code }) => {
   return (
     <div>
       <li>
-        <a href="" className="card">
+        <div href="#" className="card">
           <img src={url} className="card__image" alt="" />
           <div className="card__overlay">
             <div className="card__header">
@@ -18,7 +18,7 @@ const Card = ({ url, title, desc, code }) => {
             </p>
             <a href={code}><button className="pro-btn">Go to Code</button></a>
           </div>
-        </a>
+        </div>
       </li>
     </div>
   )

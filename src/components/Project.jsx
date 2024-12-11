@@ -11,6 +11,7 @@ const Project = () => {
   let ecommerce_url = "assets/ecommmerce.png"
   let weather_url = "assets/weatherapp.webp"
   let api_url = "assets/apibackend.png"
+  let chatbot_url = "assets/geminiapp.webp"
 
   return (
     <div id='projects'>
@@ -45,6 +46,9 @@ const Project = () => {
 
         <div>
           <Card url={api_url} title="Products API" desc="This is Express js based project in this i create some REST api of products hich can be use in another project as a API" code="https://github.com/ErfanAalam/ProductStoreAPI-backend" />
+        </div>
+        <div>
+          <Card url={chatbot_url} title="Gemini Chatbot" desc="This is react native based application in this I use the google gemini's API key and integrate it using axios and deploy it for the android devices" code="https://github.com/ErfanAalam/GeminiWithReactNative" />
         </div>
 
       </ul>

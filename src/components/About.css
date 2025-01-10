@@ -13,9 +13,10 @@
 .left {
   /* clip-path: circle(60% at 50% 50%); */
   border-radius: 20px;
-  background-image: url(/assets/erfanaalam.jpg);
+  background-image: url(/assets/erfan.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   height: 400px;
   width: 400px;
   margin-top: 60px;

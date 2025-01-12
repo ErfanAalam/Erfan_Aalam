@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <div id='footer'>
      <footer className="footer">
-    <div className="waves">
+    {/* <div className="waves">
       <div className="wave" id="wave1"></div>
       <div className="wave" id="wave2"></div>
       <div className="wave" id="wave3"></div>
       <div className="wave" id="wave4"></div>
-    </div>
+    </div> */}
     <ul className="social-icon">
       <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/in/erfan-aalam-1957b9271">
           <LinkedInIcon fontSize='large' />

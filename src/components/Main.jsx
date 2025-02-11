@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 
 const Main = () => {
 
-  const phrases = ["Web Developer", "MERN Stack  Developer", "JavaScript Developer"];
+  const phrases = ["ReactNative Developer", "MERN Stack  Developer", "React Developer"];
   const [currentPhrase, setCurrentPhrase] = useState([]);
   const [visible, setVisible] = useState(true);
   const [index, setIndex] = useState(0);
